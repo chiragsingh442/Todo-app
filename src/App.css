@@ -1,6 +1,5 @@
-/*Its a simplified version of Dracula*/
 :root {
-  --background: #282A36;
+  --background: #282a36;
   --grey: #44475a;
   --white: #f8f8f2;
   --dark-white: #f8f8f2ef;
@@ -14,18 +13,23 @@
   --yellow: #f1fa8c;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
-  background-color: var(--background);
-  color: var(--white);
+  background-color: var(--purple);
+  color: var(--orange);
   margin: 0 1rem;
+  padding: 30px;
 }
 
 h1 {
   text-align: center;
+  font-weight: 1000;
+  font-size: 70px;
 }
 
 .todoapp {
@@ -35,6 +39,7 @@ h1 {
 
 .todoform {
   width: 100%;
+  padding: 20px;
 }
 
 .flex {
@@ -45,8 +50,8 @@ h1 {
   flex: 1;
   padding: 0.5rem;
   margin: 0.5rem;
-  border: 2px solid var(--purple);
-  border-radius: .5rem;
+  border: 2px solid var(--red);
+  border-radius: 0.5rem;
   background-color: var(--white);
 }
 
@@ -54,9 +59,9 @@ h1 {
   margin: 0.5rem;
   height: 100%;
   padding: 0.5rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-color: var(--background);
-  color: var(--white)
+  color: var(--white);
 }
 
 .submitButton:hover {
@@ -69,18 +74,18 @@ h1 {
 
 .btn {
   margin: 0.5rem;
-  outline: 2px solid var(--purple);
+  outline: 2px solid var(--red);
   border: none;
   height: 100%;
   min-width: 5rem;
   padding: 0.5rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-color: var(--background);
-  color: var(--white)
+  color: var(--white);
 }
 
 .btn:hover {
-  background-color: var(--purple);
+  background-color: var(--red);
 }
 
 .btn:active {
@@ -95,8 +100,8 @@ h1 {
 
 .c-cb label {
   vertical-align: center;
-  flex:1;
-  margin: auto ;
+  flex: 1;
+  margin: auto;
 }
 
 .c-cb > input[type="checkbox"] {
@@ -114,6 +119,5 @@ todo-list {
 }
 
 label {
-  word-wrap:break-word;
-
+  word-wrap: break-word;
 }
